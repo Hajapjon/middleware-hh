@@ -1,6 +1,5 @@
 export const validateCreateAssignment = (req, res, next) => {
     const { title, content, category, email } = req.body;
-  
     if (!title) {
       return res.status(400).json({
         message: "Title is required.",
