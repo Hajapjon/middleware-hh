@@ -33,7 +33,7 @@ const validateCreateAssignment = (req, res, next) => {
       return res.status(400).json({ message: "Email format is invalid" });
     }
   } else {
-    return res.status(400).json({ message: "Email data is missing." });
+    return res.status(400).json({ message: "Email data is missing.." });
   }
 
   next();
